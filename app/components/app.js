@@ -108,7 +108,7 @@ const App = () => {
         </div>
         
         {selectedFeeRate.fixed !== 0 ? (
-            <div className="font-gabarito text-gray-600 mt-6">The amounts are calculated based on the PayPal fees of {feeRate}% + ${selectedFeeRate.fixed} per transaction.</div>
+            <div className="font-gabarito text-gray-600 mt-6">The amounts are calculated based on the PayPal fees of {feeRate}% + {currency}{selectedFeeRate.fixed} per transaction.</div>
         ) : (<div className="font-gabarito text-gray-600 mt-6">The amounts are calculated based on the PayPal fees of {feeRate}%.</div>)}
 
 
