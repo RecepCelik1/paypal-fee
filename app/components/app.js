@@ -95,15 +95,15 @@ const App = () => {
         <div className="w-full flex flex-col sm:flex-row mt-6">
             <div className="flex flex-row sm:flex-col justify-between sm:justify-start w-full sm:w-4/5">
                 <div className="font-gabarito text-gray-600">Paypal fee</div>
-                <div className="gabarito-semibold mt-2 overflow-hidden whitespace-nowrap text-overflow-ellipsis" style={{ maxWidth: '75px', overflow: 'hidden'}}>{currency}{formatNumberWithCommas((money === 0 || showResults === false) ? '-' : `${PaypalFee.toFixed(2)}`)}</div>
+                <div className="gabarito-semibold mt-2 overflow-hidden whitespace-nowrap text-overflow-ellipsis" style={{ maxWidth: '90px', overflow: 'hidden'}}>{currency}{formatNumberWithCommas((money === 0 || showResults === false) ? '-' : `${PaypalFee.toFixed(2)}`)}</div>
             </div>
             <div className="flex flex-row sm:flex-col justify-between sm:justify-start w-full">
                 <div className="font-gabarito text-gray-600">You will receive</div>
-                <div className="gabarito-semibold mt-2 overflow-hidden whitespace-nowrap text-overflow-ellipsis" style={{ maxWidth: '75px', overflow: 'hidden'}}>{currency}{formatNumberWithCommas((money === 0 || showResults === false) ? '-' : `${(money-PaypalFee).toFixed(2)}`)}</div>
+                <div className="gabarito-semibold mt-2 overflow-hidden whitespace-nowrap text-overflow-ellipsis" style={{ maxWidth: '90px', overflow: 'hidden'}}>{currency}{formatNumberWithCommas((money === 0 || showResults === false) ? '-' : `${(money-PaypalFee).toFixed(2)}`)}</div>
             </div>
             <div className="flex flex-row sm:flex-col justify-between sm:justify-start w-full">
                 <div className="font-gabarito text-gray-600">You should ask for</div>
-                <div className="gabarito-semibold mt-2 overflow-hidden whitespace-nowrap text-overflow-ellipsis" style={{ maxWidth: '75px', overflow: 'hidden'}}>{currency}{formatNumberWithCommas((money === 0 || showResults === false) ? '-' : `${breakEven.toFixed(2)}`)}</div>
+                <div className="gabarito-semibold mt-2 overflow-hidden whitespace-nowrap text-overflow-ellipsis" style={{ maxWidth: '90px', overflow: 'hidden'}}>{currency}{formatNumberWithCommas((money === 0 || showResults === false) ? '-' : `${breakEven.toFixed(2)}`)}</div>
             </div>
         </div>
         
